@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pando</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="anime.min.js"></script>
+    </head>
+    <body onload="createAccount(readCookie('Registration'))">
+        <nav id="navbar" style="opacity:1">
+            <input type="checkbox" id="nav" class="hidden">
+            <label for="nav" class="nav-btn">
+                <i></i>
+                <i></i>
+                <i></i>
+            </label>
+            <div class="logo">
+                <img src="img/Pando-Original-Yellow.png">
+            </div>
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="app.html">App</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                    <li><a href="join-us.html" id="partners-link">Join Us</a></li>
+                    <li><a href="log-in.html" id="login-link">Log In</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container" style="grid-gap: 0; justify-items: center; margin-top: 15%;">
+            <h1 id="fade-text" style="opacity: 0;">Let's get started!</h1>
+            <input class="login-field" id="create-account-input" type="text" name="username" placeholder="" style="width:0px; opacity:0;">
+            <input class="login-field" id="create-account-input-2" type="hidden" name="username" placeholder="">
+            <p id="error-message">Error message</p>
+            <button class="login-button" id='create-account-button' style="opacity: 0;" onmouseup="registNext()">Next</button>
+        </div>
+    </body>
+</html>

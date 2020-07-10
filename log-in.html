@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pando</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="anime.min.js"></script>
+    </head>
+    <body onload="fadeIn('login-page')">
+        <nav id="navbar" style="opacity:1">
+            <input type="checkbox" id="nav" class="hidden">
+            <label for="nav" class="nav-btn">
+                <i></i>
+                <i></i>
+                <i></i>
+            </label>
+            <div class="logo">
+                <img src="img/Pando-Original-Yellow.png">
+            </div>
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="app.html">App</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                    <li><a href="join-us.html" id="partners-link">Join Us</a></li>
+                    <li><a href="#" id="login-link">Log In</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container" style="grid-gap: 0; justify-items: center;">
+            <div style="width: 100%; height: 100%;">
+                <img src="img/forest-bg.png" style="width: 100%; position: absolute; left:0; top: 0; z-index:0; pointer-events: none;">
+            </div>
+            <img class="glow" id="login-logo" src="img/Pando-Original-Yellow.png" style="z-index: 9999;">
+            <h1 class="glow" style="z-index: 9999;">PANDO</h1>
+            <input style="z-index: 9999;" class="login-field" id="username-login" type="text" name="username" placeholder="Username/Email">
+            <input style="z-index: 9999;" class="login-field" id="password-login" type="password" name="password" placeholder="Password">
+            <button style="z-index: 9999;" class="login-button">Log in</button>
+            <a style="z-index: 9999;" href="#" id="forgot-password">Forgot password?</a>
+            <a style="z-index: 9999;" href="create-account.html" id="create-account">Create Account</a>
+        </div>
+    </body>
+</html>
